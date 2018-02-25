@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>My Daily Expense Tracker</title>
+        
+        <link rel="stylesheet" href="main.css">
+            
+    <link href="https://fonts.googleapis.com/css?family=Aladin|Architects+Daughter|Coming+Soon|Courgette|Fondamento|Gochi+Hand|Handlee|Marck+Script|Merienda+One|Neucha|Niconne|Patrick+Hand|Walter+Turncoat" rel="stylesheet">
+
+        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <script src="submit.js">
+        </script>
+
+    </head>
+    <body>
+        <header class="static">
+        <header class="main">
+            <div class="container">
+                <div id="branding">
+                    <img src="img/logo.jpg" width:"50px" height="50px" class="logo">
+                    <h1 class="name"> My Daily Expense Tracker</h1>
+                </div>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active"><a href="expenses.html">Expenses</a></li>
+                            <li><a href="income.html">Income</a></li>
+                            <li><a href="investments.html">Investments</a></li>
+                            <li><a href="bills.html">Bills</a></li>
+                        </ul>
+                    </nav>
+            </div>
+        </header>
+        <div class="showtotal">
+        
+            <p style="display: inline;">Today's Total : </p><span class="total"></span> 
+         <!--   <p class="alert alert-warning" id="error_message">Successfuly submitted</p>
+            <p class="alert alert-success" id="success_message">Error occured</p>
+
+        -->
+        </div>
+        </header>
+        <section class="boxes">
+            <article class="col-lg-2">
+            <a href="">Monthly</a>
+            <a href="">Daily</a>
+            <a href="">Miscellaneous</a>
+            </article>
+        <article class="col-lg-10">
+        
+        <div class="grocery">
+            <header class="head">
+            <img src="img/grocery.jpg">
+            <h2 id="type">Grocery</h2>
+            </header>
+            <form method="post" action="">
+            <table class="table table-striped">
+                    <tr>
+                        <td><label>Date </label></td>
+                        <td><input type="date" name="date" id="date"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Amount </label></td>
+                        <td><input type="number" name="amount" id="amount"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Description </label></td>
+                        <td><textarea cols="15" rows="4" name="description" id="description"></textarea></td>
+                    </tr>
+                </table>
+                <button type="submit" class="btn btn-success" id="submit">OK</button>
+                <button type="reset" class="btn btn-danger" id="reset">Cancel</button>
+            
+                </form>
+        </div>
+            
+            
+            
+        <div class="transport">
+            <header class="head">
+                <img src="img/fuel.jpg">
+            <h2>Transport</h2>
+            </header>
+           <form action="" id="" method="post">
+                <table class="table table-striped">
+                    <tr>
+                        <td><label>Date </label></td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Amount </label></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Description </label></td>
+                        <td><textarea cols="15" rows="4"></textarea></td>
+                    </tr>
+                </table>
+                <button type="submit" class="btn btn-success">OK</button>
+                <button type="reset" class="btn btn-danger">Cancel</button>
+            </form>  
+        </div>
+            
+            
+            
+        <div class="food">
+            <header class="head">
+                <img src="img/food.png">
+            <h2>Food</h2>
+            </header>
+            <form action="" id="" method="post">
+                <table class="table table-striped">
+                    <tr>
+                        <td><label>Date </label></td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Amount </label></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Description </label></td>
+                        <td><textarea cols="15" rows="4"></textarea></td>
+                    </tr>
+                </table>
+                <button type="submit" class="btn btn-success">OK</button>
+                <button type="reset" class="btn btn-danger">Cancel</button>
+            </form>
+        </div>
+            
+        <div class="entertainment">
+            <header class="head">
+                <img src="img/movie.jpg">
+            <h2>Entertainment</h2>
+            </header>
+            <form action="" id="" method="post">
+                <table class="table table-striped">
+                    <tr>
+                        <td><label>Date </label></td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Amount </label></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Description </label></td>
+                        <td><textarea cols="15" rows="4"></textarea></td>
+                    </tr>
+                </table>
+                <button type="submit" class="btn btn-success">OK</button>
+                <button type="reset" class="btn btn-danger">Cancel</button>
+            </form>
+        </div>
+        
+        
+             <div class="healthcare">
+            <header class="head">
+                <img src="img/healthcare.png">
+            <h2>Healthcare</h2>
+            </header>
+            <form action="" id="" method="post">
+                <table class="table table-striped">
+                    <tr>
+                        <td><label>Date </label></td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Amount </label></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Description </label></td>
+                        <td><textarea cols="15" rows="4"></textarea></td>
+                    </tr>
+                </table>
+                <button type="submit" class="btn btn-success">OK</button>
+                <button type="reset" class="btn btn-danger">Cancel</button>
+            </form>
+        </div>
+            
+        <div class="beauty">
+            <header class="head">
+                <img src="img/beauty.jpg">
+            <h2>BeautyCare</h2>
+            </header>
+           <form action="" id="" method="post">
+                <table class="table table-striped">
+                    <tr>
+                        <td><label>Date </label></td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Amount </label></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Description </label></td>
+                        <td><textarea cols="15" rows="4"></textarea></td>
+                    </tr>
+                </table>
+                <button type="submit" class="btn btn-success">OK</button>
+                <button type="reset" class="btn btn-danger">Cancel</button>
+            </form>
+        </div>
+            </article>
+        
+        
+        
+        
+        </section>
+        
+         
+        <footer>
+            <p >My Expense Tracker &copy; 2018</p>
+        </footer>
+        
+  </body>
+  
+  </html

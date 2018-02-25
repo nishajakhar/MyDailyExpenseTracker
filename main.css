@@ -1,0 +1,334 @@
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.main-area{
+   min-height: 2500px;
+    background-image: url(img/My%20Page7.png); 
+    background-color: #464646;
+    background-size: cover;
+
+}
+.container{
+    width:95%;
+    margin:auto;
+    overflow:hidden;
+}
+
+header{
+    min-height: 50px;
+    background: #35424a;
+    color:white;
+}
+
+.main{
+max-height: 65px !important;
+}
+header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size:16px;
+}
+header a:hover{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+header li{
+    float:left;
+    padding:10px;
+    display: inline;
+    font-family: Handlee;
+}
+
+
+#branding{
+    float:left;
+    margin: 0px;
+}
+#branding h1{
+    font-size: 30px;
+    font-family: "Walter turncoat";
+    margin-left: 5px;
+}
+header nav{
+    float:right;
+    margin-top: 20px;
+}
+
+.active{
+    border-bottom: 2px solid white;
+    
+}
+
+
+.static{
+    position: fixed;
+    backface-visibility: hidden;
+    width: 100%;
+    z-index:1;
+    margin-top: -250px;
+}
+
+.logo{
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+}
+
+.boxes{
+    background-image: url(img/back.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #464646;
+    min-height: 900px;
+    margin-top: 250px;
+
+}
+.boxes div{
+    width : 250px;
+    height: auto;;
+    margin: 20px;
+    display: inline-block;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.5;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+    box-shadow:8px 8px 5px black;
+    border-radius: 10px;
+
+}
+
+.boxes button{
+    margin: 10px;
+}
+
+.boxes div:hover{
+    width : 250px;
+    height: auto;
+    padding: 1px;
+    opacity: 0.6;
+    display: inline-block;
+  background-color: #ffffff;
+  border: 1px solid black;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+    box-shadow:8px 8px 20px white;
+    border-radius: 10px;
+}
+
+.boxes{
+    text-align: center;  
+}
+.boxes h2{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.boxes label{
+    font-weight: bold;
+}
+
+.boxes input,textarea{
+    box-shadow: 3px 3px 10px black;
+}
+input{
+    max-width: 130px;
+}
+
+
+.head img{
+    float:left;
+    border-radius: 10px;
+    width:80px;
+    height: 50px;
+    z-index: 1;
+}
+
+.head{
+    max-height: 20px;
+}
+table{
+    margin-bottom: 0px !important;
+}
+button{
+    margin-top: 0px !important;
+}
+.col-lg-2 a{
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+    color: white;
+    font-family: Handlee;
+    font-weight: bold;
+}
+.col-lg-2 a:hover{
+    text-decoration: none;
+    color:black;
+    text-shadow: 5px 5px 10px white;
+
+}
+
+.col-lg-2{
+    padding-top:50px; 
+}
+.showtotal{
+    min-height: auto;
+    text-align: center;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    font-size: 30px;
+    font-family: Handlee;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    padding: 5px;
+}
+
+.total{
+    font-size: 20px;
+    border: 2px solid white;
+    display: inline-block;
+    width : 100px;
+    height: 40px;
+    box-shadow: 2px 2px 10px aqua, -2px -2px 10px aqua;
+}
+
+#error_message, #success_message{
+    border: 2px solid white;
+    box-shadow: 2px 2px 10px aqua, -2px -2px 10px aqua;
+    max-height: auto;
+    display: inline;
+    margin: 10px;
+    float: right;
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+footer{
+    text-align: center;
+    background-color : #35424a;
+    border-top: 2px solid aqua;
+    min-height: 30px;
+    margin-bottom: 0px;
+}
+footer p{
+    
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    font-family: Handlee;
+    color: white;
+}
+
+
+@media(min-width : 300px){
+    .main-area{
+        min-height: 700px;
+    background-image: url(img/My%20Page7.png); 
+    background-color: #464646;
+        background-size: cover;
+        width: auto;
+
+    }
+    .name{
+        display:none;
+    }
+   
+}
+
+/* Extra Small Devices, Phones */ 
+@media(min-width : 480px){
+        .main-area{
+            min-height: 1200px;
+            width: auto;
+            background-image: url(img/My%20Page7.png); 
+            background-color: #464646;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+    }
+    
+    
+.static{
+    position: fixed;
+    backface-visibility: hidden;
+    width: 100%;
+    z-index:1;
+    margin-top: -180px;
+}
+    
+    .boxes{
+        margin-top: 150px;
+    }
+    
+}
+
+
+
+/* Small Devices, Tablets */
+@media(min-width : 768px){
+    .main-area{
+        min-height: 1500px;
+    background-image: url(img/My%20Page7.png); 
+    background-color: #464646;
+        background-size: cover;
+        width: auto;
+
+    }
+    
+    
+.static{
+    position: fixed;
+    backface-visibility: hidden;
+    width: 100%;
+    z-index:1;
+    margin-top: -190px;
+}
+    
+    .boxes{
+        margin-top: 190px;
+    }
+      .name{
+        display: inline-block;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media(min-width : 992px){
+    .main-area{
+        min-height: 2500px;
+    background-image: url(img/My%20Page7.png); 
+    background-color: #464646;
+        background-size: cover;
+        width: auto;
+
+    }
+.static{
+    position: fixed;
+    backface-visibility: hidden;
+    width: 100%;
+    z-index:1;
+    margin-top: -120px;
+}
+    
+    .boxes{
+        margin-top: 120px;
+    }
+    
+    .name{
+        display: inline-block;
+    }
+}
